@@ -1,0 +1,23 @@
+{
+  "name": "cloudflare-todos",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx --bun vite",
+    "dev-wrangler": "bun run build && bunx wrangler pages dev --port 5000",
+    "build": "tsc -b && bunx --bun vite build",
+    "preview": "bunx --bun vite preview"
+  },
+  "dependencies": {
+    "hono": "^4.5.0",
+    "solid-js": "^1.8.18"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240718.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.4",
+    "vite-plugin-solid": "^2.10.2",
+    "wrangler": "^3.65.0"
+  }
+}
